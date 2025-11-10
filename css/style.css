@@ -76,6 +76,8 @@ li:hover {
 }
 
 .section-search-filter {
+  display: flex;
+  flex-direction: column;
   margin: 50px;
   padding: auto;
   width: 924px;
@@ -132,7 +134,7 @@ li:hover {
 .filters-container {
   height: 50px;
   width: 758px;
-  margin-top: 35px;
+  margin: 0;
   gap: 15px;
   display: flex;
   flex-direction: row;
@@ -152,6 +154,43 @@ li:hover {
   border-radius: 25px 25px 25px 25px;
   font-weight: 700;
   font-size: 17px;
+}
+.filters:hover {
+  background-color: #deebff;
+}
+.place-available {
+  margin: 0;
+  padding: 0;
+  width: 1340px;
+  height: 24px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.info {
+  margin: 0;
+  padding: 0;
+  height: 24px;
+  width: 24px;
+  border: 1px solid #d9d9d9;
+  border-radius: 12px 12px 12px 12px;
+  justify-items: center;
+}
+.fa-info {
+  font-size: 10px;
+  text-align: center;
+  margin-left: 10px;
+}
+p {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 a {
