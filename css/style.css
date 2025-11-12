@@ -336,8 +336,8 @@ a {
   padding: 30px;
 }
 .activities-cards {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
 
@@ -358,6 +358,10 @@ a {
 .activities-cards h3 {
   margin: 0;
 }
+/* #fort {
+  height: 100%;
+  width: 298px;
+} */
 
 /****** Footer ******/
 
