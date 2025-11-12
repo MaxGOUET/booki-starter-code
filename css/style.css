@@ -358,10 +358,6 @@ a {
 .activities-cards h3 {
   margin: 0;
 }
-/* #fort {
-  height: 100%;
-  width: 298px;
-} */
 
 /****** Footer ******/
 
@@ -421,5 +417,65 @@ footer h3 {
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-  /* ... */
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+  footer div {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .populaires {
+    border-radius: 0 !important;
+  }
+
+  .hebergements-and-populaires {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .hebergements-cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+    gap: 30px;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+  }
+
+  .marseille-activities {
+    padding: 20px;
+  }
+
+  .activities-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .activities-cards .card {
+    height: 207px;
+  }
+  .activities-cards img {
+    height: 124px;
+  }
+  .populaires-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .populaires-cards .card {
+    width: 100%;
+  }
+  .populaires-cards a {
+    width: 100%;
+  }
 }
