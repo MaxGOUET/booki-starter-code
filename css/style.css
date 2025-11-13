@@ -23,7 +23,7 @@ body {
 .main-container {
   width: 100%;
   max-width: 1440px;
-  padding: 0 50px;
+  /* padding: 0 50px; */
 }
 
 header {
@@ -88,7 +88,6 @@ main {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: auto;
   width: 100%;
   gap: 35px;
 }
@@ -119,7 +118,6 @@ main {
   margin: 0;
   padding: 15px;
   color: white;
-  font: "Raleway";
   font-weight: 700;
   height: 50px;
   border: 1px solid #0065fc;
@@ -434,6 +432,7 @@ footer h3 {
   li:hover {
     color: #0065fc;
     border-bottom: 2px solid #0065fc;
+    border-top: none;
   }
   .section-search-filter {
     padding-left: 20px;
