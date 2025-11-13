@@ -359,11 +359,9 @@ a {
   border-radius: 20px 20px 20px 20px;
 }
 
-.activities-cards .card-txt {
-  padding: 20px;
-}
 .activities-cards h3 {
   margin: 0;
+  padding: 20px;
 }
 
 /****** Footer ******/
