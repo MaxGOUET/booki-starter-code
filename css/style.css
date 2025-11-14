@@ -181,7 +181,7 @@ main {
   border: 2px solid #d9d9d9;
   border-radius: 25px 25px 25px 25px;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 1.1rem;
 }
 
 .filters:hover {
@@ -215,13 +215,14 @@ p {
   margin: 0;
   padding: 0;
   align-items: center;
+  padding-right: 40px;
 }
 
 h1 {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
-  padding-right: 10px;
+  padding-right: 30px;
 }
 
 a {
@@ -447,10 +448,18 @@ footer h3 {
     justify-content: center;
     align-items: center;
   }
+  nav {
+    width: 100%;
+  }
+  .menu {
+    width: 100%;
+  }
   li {
     border-bottom: 2px solid #f2f2f2;
     display: flex;
     justify-content: space-around;
+    width: 100%;
+    padding-bottom: 16px;
   }
   li:hover {
     color: #0065fc;
@@ -548,6 +557,9 @@ footer h3 {
   }
   .filters-container {
     align-items: inherit;
+  }
+  .filters-container div{
+    padding-right: 40px;
   }
   .filters {
     justify-content: inherit;
