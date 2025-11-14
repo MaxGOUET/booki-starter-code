@@ -13,6 +13,10 @@
   color: var(--main-color);
 }
 
+.fa-person {
+  font-size: 22px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -33,10 +37,12 @@ header {
   flex-direction: row;
   justify-content: space-between;
 }
+
 #logo {
   height: 19px;
   width: 61px;
 }
+
 .divLogo {
   height: 79px;
   width: 161px;
@@ -44,6 +50,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 nav {
   height: 35px;
   width: 344px;
@@ -52,6 +59,7 @@ nav {
   display: flex;
   justify-content: center;
 }
+
 .menu {
   height: 35px;
   width: 244px;
@@ -63,6 +71,7 @@ nav {
   align-items: flex-start;
   list-style-type: none;
 }
+
 li {
   margin: 0;
   padding-top: 16px;
@@ -90,7 +99,10 @@ main {
   width: 100%;
   gap: 35px;
 }
-.search-location {
+
+.fa-location-dot {
+  color: black;
+  align-items: center;
   height: 49px;
   width: 50px;
   display: flex;
@@ -98,10 +110,6 @@ main {
   background-color: #f2f2f2;
   border: 1px solid #f2f2f2;
   border-radius: 15px 0 0 15px;
-}
-.fa-location-dot {
-  color: black;
-  align-content: center;
 }
 
 .rechercher {
@@ -124,6 +132,13 @@ main {
   border-radius: 0 15px 15px 0;
 }
 
+#btnResponsive {
+  display: none;
+}
+.fa-magnifying-glass {
+  color: white;
+}
+
 .input-rechercher {
   margin: 0;
   padding: 0;
@@ -136,6 +151,7 @@ main {
   font-weight: 700;
   text-align: center;
 }
+
 .filters-container {
   height: 50px;
   width: 100%;
@@ -145,11 +161,13 @@ main {
   flex-direction: row;
   align-items: center;
 }
+
 .filters-container div {
   display: flex;
   flex-direction: row;
   gap: 15px;
 }
+
 .filters {
   margin: 0;
   height: 50px;
@@ -165,9 +183,11 @@ main {
   font-weight: 700;
   font-size: 17px;
 }
+
 .filters:hover {
   background-color: #deebff;
 }
+
 .place-available {
   margin: 0;
   padding: 0;
@@ -177,20 +197,18 @@ main {
   flex-direction: row;
   gap: 10px;
 }
-.info {
-  margin: 0;
-  padding: 0;
+
+.fa-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 24px;
   width: 24px;
   border: 1px solid #d9d9d9;
   border-radius: 12px 12px 12px 12px;
-  justify-items: center;
-}
-.fa-info {
   font-size: 10px;
-  text-align: center;
-  margin-left: 10px;
 }
+
 p {
   width: 100%;
   display: flex;
@@ -202,7 +220,8 @@ p {
 h1 {
   margin: 0;
   padding: 0;
-  font-size: 22px;
+  font-size: 1.5rem;
+  padding-right: 10px;
 }
 
 a {
@@ -418,7 +437,7 @@ footer h3 {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
   .main-container {
     padding: 0;
   }
@@ -427,6 +446,11 @@ footer h3 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  li {
+    border-bottom: 2px solid #f2f2f2;
+    display: flex;
+    justify-content: space-around;
   }
   li:hover {
     color: #0065fc;
@@ -446,20 +470,6 @@ footer h3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-  }
-  footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #f2f2f2;
-    width: 100%;
-  }
-  footer div {
-    height: auto;
-    width: 100%;
-    flex-direction: column;
-    display: flex;
-    gap: 15px;
-    padding: 20px;
   }
 
   .populaires {
@@ -511,5 +521,51 @@ footer h3 {
   }
   .populaires-cards a {
     width: 100%;
+  }
+  #btn {
+    display: none;
+  }
+
+  #btnResponsive {
+    display: inline;
+    margin: 0;
+    padding: 15px;
+    color: white;
+    font-weight: 700;
+    height: 50px;
+    border: 1px solid #0065fc;
+    background-color: #0065fc;
+    border-radius: 15px;
+    filter: drop-shadow(0px 4px 1px rgba(0, 0, 0, 0.15));
+    margin-left: -15px;
+  }
+  .fa-magnifying-glass {
+    color: white;
+  }
+  .input-rechercher {
+    padding-right: 25px;
+    padding-left: 25px;
+  }
+  .filters-container {
+    align-items: inherit;
+  }
+  .filters {
+    justify-content: inherit;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    width: 100%;
+  }
+
+  footer div {
+    height: auto;
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+    padding: 20px;
   }
 }
