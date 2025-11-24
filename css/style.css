@@ -26,7 +26,6 @@ body {
 }
 
 .main-container {
-  width: 100%;
   max-width: 1440px;
 }
 
@@ -213,7 +212,6 @@ main {
 }
 
 p {
-  width: 100%;
   display: flex;
   margin: 0;
   padding: 0;
@@ -571,7 +569,6 @@ footer h3 {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2;
-    width: 100%;
   }
 
   footer div {
