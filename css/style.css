@@ -21,8 +21,6 @@
 body {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
 }
 
 .main-container {
@@ -115,7 +113,7 @@ main {
 
 .rechercher {
   height: 50px;
-  width: 355px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -153,6 +151,11 @@ main {
   text-align: center;
 }
 
+form {
+  display: flex;
+  width: 100%;
+}
+
 .filters-container {
   height: 50px;
   width: 100%;
@@ -182,7 +185,6 @@ main {
   border: 2px solid #d9d9d9;
   border-radius: 25px 25px 25px 25px;
   font-weight: 700;
-  font-size: 1.1rem;
   text-wrap: nowrap;
 }
 
@@ -222,7 +224,6 @@ h1 {
   margin: 0;
   padding: 0;
   font-size: 1.5rem;
-  padding-right: 30px;
 }
 
 a {
@@ -539,7 +540,7 @@ footer h3 {
   }
 
   #btnResponsive {
-    display: inline;
+    display: block;
     margin: 0;
     padding: 15px;
     color: white;
@@ -557,6 +558,7 @@ footer h3 {
   .input-rechercher {
     padding-right: 25px;
     padding-left: 25px;
+    width: 100%;
   }
   .filters-container {
     align-items: inherit;
