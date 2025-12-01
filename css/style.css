@@ -375,6 +375,7 @@ a {
 .activities-cards .card {
   padding: 0;
   border-radius: 20px 20px 20px 20px;
+  height: 100%;
 }
 
 .activities-cards h3 {
@@ -435,6 +436,10 @@ footer h3 {
 
   .populaires-cards .card-subtitle {
     font-size: 13px;
+  }
+
+  .activities-cards .card {
+    height: 100%;
   }
 }
 
@@ -520,7 +525,7 @@ footer h3 {
     flex-direction: column;
   }
   .activities-cards .card {
-    height: 207px;
+    height: 100%;
   }
   .activities-cards img {
     height: 124px;
