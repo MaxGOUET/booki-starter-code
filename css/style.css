@@ -100,7 +100,6 @@ header {
   height: 79px;
   width: 161px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
