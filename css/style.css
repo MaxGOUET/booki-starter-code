@@ -493,6 +493,10 @@ footer h3 {
     border-top: none;
   }
 
+  .divLogo {
+    justify-content: center;
+  }
+
   /** responsive mobile search */
   #btn {
     display: none;
